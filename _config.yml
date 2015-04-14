@@ -1,35 +1,47 @@
-# Jekyll configuration
-
-name: My blog
-description: A jekyll theme
-
-# url is currently only used only for the RSS feed in feed.xml
-url: http://scotte.github.io
-
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
-baseurl: /jekyll-clean
-
-# This can be '' to hide the Github nav button
-github: 'scotte/jekyll-clean'
-
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
-
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: ''
-comments: true
-
-permalink: /:year/:month/:title
-paginate: 3
-
-highlighter: pygments
+permalink: /:year/:month/:day/:title.html
+paginate: 10
 markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-exclude: ['README.md', 'LICENSE']
+# 作者信息
+author: 
+  name: Anya Lin
+  email: lay.1010@hotmail.com
+  link: http://painterlin.com
+  weibo: http://weibo.com/orangeissweet
+  github: http://github.com/lay1010
+  music: http://site.douban.com/linanya
+  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+
+# 站点信息
+title: 林安亚的博客
+description: My personal blog
+url: http://painterlin.com
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: /public/img/deer3.png
+favicon: /public/img/deer3.png
+
+# google analytics 设置
+ga:
+  id: UA-54262064-1 
+  url: painterlin.com
+
+# disqus 设置
+disqus:
+  shortname: painterlin
+
+# 主题设置，自动激活某个标签
+active: 读书
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - LaTeX
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
