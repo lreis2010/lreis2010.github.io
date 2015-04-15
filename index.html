@@ -6,6 +6,7 @@ titlename: 首页
 <!--<br>--> 
 <center><h3><font color="#000080">淡泊以明志，宁静以致远</font></h3></center>
 <div class="row">
+  <!-- 最新文章-->
   <div class="col-md-12">
     <div class="panel panel-primary">
       <div class="panel-heading">{{ site.locals.newest }}</div>
@@ -17,6 +18,7 @@ titlename: 首页
       {% endfor %}
     </div>
   </div>
+  <!--需要首页显示的项目-->
   {% for cate in site.cates %}
     <div class="col-md-12">
       <div class="panel panel-primary">
